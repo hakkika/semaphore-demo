@@ -1,0 +1,8 @@
+---
+- hosts: database
+
+  tasks:
+  
+    - name: Debug variables
+      ansible.builtin.debug:
+        var: hostvars[inventory_hostname]
